@@ -1,10 +1,5 @@
 package main
 
-import (
-	"data-structures-go/src/doublylinkedlist"
-	"fmt"
-)
-
 func main() {
 	// Sinly Linked List
 	// ssl := singlylinkedlist.NewSinglylinkedlist()
@@ -17,18 +12,29 @@ func main() {
 	// ssl.ShowValues()
 
 	// Doubly Linked List
-	dll := doublylinkedlist.NewDoublyLinkedList()
-	dll.Append(0)
-	dll.Append(1)
-	dll.Append(2)
-	dll.Append(3)
-	dll.Append(4)
-	// dll.Append(5)
+	// dll := doublylinkedlist.NewDoublyLinkedList()
+	// dll.Append(0)
+	// dll.Append(1)
 	// dll.Prepend(-1)
-	// dll.Insert(2, 50)
 	// dll.Insert(6, 6)
-	// dll.PrintList()
 	// dll.Delete(3)
-	dll.PrintList()
-	fmt.Println(dll.GetIndex(4))
+	// dll.PrintList()
+	// fmt.Println(dll.GetIndex(4))
+
+	// Stack
+	// s := stack.NewStack()
+	// s.Push("Tumtum")
+	// s.Push("Pilingun")
+	// s.Push("Edilberto")
+	// s.Push("Maria")
+	// s.Push("Ana")
+	// fmt.Println(s.Peek())
+	// s.Pop()
+	// value, err := s.GetIndex(4)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// } else {
+	// 	fmt.Println(value)
+	// 	fmt.Println(s.LastItem())
+	// }
 }
