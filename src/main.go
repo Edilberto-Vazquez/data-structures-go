@@ -1,5 +1,10 @@
 package main
 
+import (
+	"data-structures-go/src/queue"
+	"fmt"
+)
+
 func main() {
 	// Sinly Linked List
 	// ssl := singlylinkedlist.NewSinglylinkedlist()
@@ -37,4 +42,15 @@ func main() {
 	// 	fmt.Println(value)
 	// 	fmt.Println(s.LastItem())
 	// }
+
+	// Queue
+	q := queue.NewQueue()
+	q.Enqueue("Edilberto")
+	q.Enqueue("Maria")
+	q.Enqueue("Ana")
+	q.Peek()
+	fmt.Println(q.Peek())
+	q.Dequeue()
+	q.Dequeue()
+	q.Dequeue()
 }
