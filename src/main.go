@@ -1,8 +1,9 @@
 package main
 
 import (
-	"data-structures-go/src/queue"
 	"fmt"
+
+	"github.com/Edilberto-Vazquez/data-structures-go/src/binarysearchtree"
 )
 
 func main() {
@@ -44,13 +45,36 @@ func main() {
 	// }
 
 	// Queue
-	q := queue.NewQueue()
-	q.Enqueue("Edilberto")
-	q.Enqueue("Maria")
-	q.Enqueue("Ana")
-	q.Peek()
-	fmt.Println(q.Peek())
-	q.Dequeue()
-	q.Dequeue()
-	q.Dequeue()
+	// q := queue.NewQueue()
+	// q.Enqueue("Edilberto")
+	// q.Enqueue("Maria")
+	// q.Enqueue("Ana")
+	// q.Peek()
+	// fmt.Println(q.Peek())
+	// q.Dequeue()
+	// q.Dequeue()
+	// q.Dequeue()
+
+	// Binary Search Tree
+	b := binarysearchtree.NewBinarySearchTree()
+	b.Insert(10)
+	b.Insert(4)
+	b.Insert(20)
+	b.Insert(2)
+	b.Insert(8)
+	b.Insert(17)
+	b.Insert(170)
+	// b.Delete(20)
+	fmt.Println(b.Search(10))
+	fmt.Println(b.Search(4))
+	fmt.Println(b.Search(20))
+	fmt.Println(b.Search(2))
+	fmt.Println(b.Search(8))
+	fmt.Println(b.Search(17))
+	fmt.Println(b.Search(170))
+	fmt.Println(b.Search(20))
+	fmt.Println(b.Search(10))
+	b.Delete(170)
+	fmt.Println(b.Search(20))
+
 }
